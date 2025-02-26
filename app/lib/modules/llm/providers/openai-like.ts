@@ -12,8 +12,11 @@ export default class OpenAILikeProvider extends BaseProvider {
     apiTokenKey: 'OPENAI_LIKE_API_KEY',
   };
 
-  staticModels: ModelInfo[] = [];
-
+  staticModels: ModelInfo[] = [
+    { name: 'gpt-4o', label: 'GPT-4o', provider: 'OpenAI', maxTokenAllowed: 128000 },
+    { name: 'gpt-o3-mini', label: 'GPT-o3-Mini', provider: 'OpenAI', maxTokenAllowed: 128000 }
+  ];
+  
   async getDynamicModels(
     apiKeys?: Record<string, string>,
     settings?: IProviderSetting,
