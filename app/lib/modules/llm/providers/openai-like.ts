@@ -13,8 +13,8 @@ export default class OpenAILikeProvider extends BaseProvider {
   };
 
   staticModels: ModelInfo[] = [
-    { name: 'gpt-4o', label: 'GPT-4o', provider: 'OpenAILike', maxTokenAllowed: 8000 },
-    { name: 'gpt-o3-mini', label: 'GPT-o3-Mini', provider: 'OpenAILike', maxTokenAllowed: 8000 }
+    { name: 'gpt-4o', label: 'gpt-4o', provider: 'OpenAILike', maxTokenAllowed: 8000 },
+    { name: 'gpt-o3-mini', label: 'gpt-o3-mini', provider: 'OpenAILike', maxTokenAllowed: 8000 }
   ];
   
   async getDynamicModels(
